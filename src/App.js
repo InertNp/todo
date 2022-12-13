@@ -26,6 +26,8 @@ function App() {
       if (a.id === e) {
         if (!a.complete) {
           a.complete = true;
+        } else {
+          a.complete = false;
         }
         return a;
       }

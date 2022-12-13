@@ -9,7 +9,7 @@ const CreateNew = ({ dark, addData }) => {
     <CreateBar dark={dark}>
       <CircleClick dark={dark}>
         <div
-          className={`circle`}
+          className={inputText ? "circleL" : "circle"}
           onClick={() => {
             setInputText("");
             addData({ text: inputText, id: uuid(), complete: false });

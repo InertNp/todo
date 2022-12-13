@@ -19,7 +19,18 @@ export const CircleClick = styled.div`
     border-radius: 100%;
     background-color: transparent;
   }
+  .circleL {
+    height: 25px;
+    width: 25px;
+    border: 2px solid hsl(220, 98%, 81%);
+    border-radius: 100%;
+    background-color: transparent;
+  }
   .circle:hover {
+    background-color: transparent;
+    border-color: hsl(220, 98%, 61%);
+  }
+  .circleL:hover {
     background-color: transparent;
     border-color: hsl(220, 98%, 61%);
   }
