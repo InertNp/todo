@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ListBar = styled.div`
-  height: 15%;
+  height: 16%;
   width: 100%;
   display: flex;
   flex-direction: row;
