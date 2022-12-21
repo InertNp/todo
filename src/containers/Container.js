@@ -15,6 +15,8 @@ const Container = ({
   completeTodo,
   deleteTodo,
 }) => {
+  // console.log(data);
+
   return (
     <div className="allContainer">
       <div className="elementsContainer">
@@ -52,7 +54,13 @@ const Container = ({
               deleteTodo={(e) => deleteTodo(e)}
             />
           ) : (
-            <div className="llContainer">Add Some Task!</div>
+            <div className="llContainer">
+              {mode == "all"
+                ? "Add Some Task!"
+                : mode == "complete"
+                ? "Do some Tasks"
+                : "Add Active Task!"}
+            </div>
           )}
         </div>
         {/* this is not shown in pc */}

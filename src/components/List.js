@@ -5,7 +5,6 @@ import check from "../images/icon-check.svg";
 import cross from "../images/icon-cross.svg";
 const List = ({ dark, data, completeTodo, deleteTodo }) => {
   const [hover, setHover] = useState(false);
-
   return (
     <ListBar
       dark={dark}

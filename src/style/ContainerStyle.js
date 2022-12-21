@@ -23,7 +23,7 @@ export const MainContainer = styled.div`
   display: flex;
   flex-direction: row;
 
-  /* @media (max-width: 768px) {
+  /* @media (max-width: 1100px) {
     flex-direction: column;
   } */
 
@@ -42,7 +42,7 @@ export const MainContainer = styled.div`
     background-size: 100% 30%;
     background-repeat: no-repeat;
     background-position: top;
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
       background-image: ${(a) => {
         if (a.dark) {
           return `url(${bgDesktopDark})`;
@@ -58,7 +58,7 @@ export const MainContainer = styled.div`
     width: 90%;
     height: 100%;
     /* border: 2px solid red; */
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
       width: 40%;
     }
   }
@@ -84,7 +84,7 @@ export const MainContainer = styled.div`
     align-items: center;
     justify-content: end;
     /* border: 2px solid red; */
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
       width: 8%;
     }
   }
@@ -112,7 +112,7 @@ export const MainContainer = styled.div`
           return "hsl(233, 11%, 84%)";
         }
       }};
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
       height: 50%;
     }
   }
@@ -166,9 +166,10 @@ export const MainContainer = styled.div`
 
     overflow-y: scroll;
     overflow-x: hidden;
+    scrollbar-width: none;
   }
   .lists::-webkit-scrollbar {
-    width: 8px;
+    display: none;
   }
   //50+28+5=83
   // this conmtainer is for items left and clear
@@ -226,7 +227,8 @@ export const MainContainer = styled.div`
     border-radius: 10px;
     justify-content: space-evenly;
     align-items: center;
-    @media (min-width: 768px) {
+    cursor: pointer;
+    @media (min-width: 1100px) {
       display: none;
     }
   }
@@ -235,7 +237,7 @@ export const MainContainer = styled.div`
     display: none;
     /* background-color: green; */
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
       display: flex;
       width: 40%;
       flex-direction: row;
@@ -244,6 +246,7 @@ export const MainContainer = styled.div`
   }
   .activeFilter {
     color: hsl(220, 98%, 61%);
+    cursor: pointer;
   }
 
   .btmp {
